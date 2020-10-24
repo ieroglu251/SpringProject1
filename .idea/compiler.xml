@@ -8,6 +8,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Spring-05-JavaAnnotations-Autowired" />
+        <module name="Spring-05-JavaAnnotation-Value" />
         <module name="Spring-01-SpringContainer" />
         <module name="Spring-03-BeanScope-Singleton-Protype" />
         <module name="Spring-05-JavaAnnotations-Component" />
@@ -26,8 +27,10 @@
       <module name="Spring-03-BeanScope-Singleton-Protype" target="1.8" />
       <module name="Spring-04-BeanLifecycle-InitAndDestroyMethod" target="1.8" />
       <module name="Spring-05-JavaAnnotation-Qualifier" target="1.8" />
+      <module name="Spring-05-JavaAnnotation-Value" target="1.8" />
       <module name="Spring-05-JavaAnnotations-Autowired" target="1.8" />
       <module name="Spring-05-JavaAnnotations-Component" target="1.8" />
+      <module name="Spring-05-Value" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
