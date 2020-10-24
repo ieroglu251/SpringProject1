@@ -11,10 +11,12 @@
         <module name="Spring-01-SpringContainer" />
         <module name="Spring-03-BeanScope-Singleton-Protype" />
         <module name="Spring-04-BeanLifecycle-InitAndDestroyMethod" />
+        <module name="GenaralNotes" />
         <module name="Spring-02-DI-ConstructorInjection" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="GenaralNotes" target="1.5" />
       <module name="Spring-01-SpringContainer" target="1.8" />
       <module name="Spring-02-DI-ConstructorInjection" target="1.8" />
       <module name="Spring-02-DI-SetterInjection" target="1.8" />

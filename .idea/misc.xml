@@ -8,6 +8,7 @@
         <option value="$PROJECT_DIR$/Spring-02-DI-SetterInjection/pom.xml" />
         <option value="$PROJECT_DIR$/Spring-03-BeanScope-Singleton-Protype/pom.xml" />
         <option value="$PROJECT_DIR$/Spring-04-BeanLifecycle-InitAndDestroyMethod/pom.xml" />
+        <option value="$PROJECT_DIR$/GenaralNotes/pom.xml" />
       </list>
     </option>
   </component>
