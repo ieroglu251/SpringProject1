@@ -1,0 +1,3 @@
+git push: git push origin HEAD
+
+1. To able to use anotation is to enble componenet scanning.

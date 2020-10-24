@@ -9,6 +9,7 @@
         <option value="$PROJECT_DIR$/Spring-03-BeanScope-Singleton-Protype/pom.xml" />
         <option value="$PROJECT_DIR$/Spring-04-BeanLifecycle-InitAndDestroyMethod/pom.xml" />
         <option value="$PROJECT_DIR$/GenaralNotes/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring-05-JavaAnnotations-Component/pom.xml" />
       </list>
     </option>
   </component>
