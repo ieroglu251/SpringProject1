@@ -11,6 +11,6 @@ public class Resource {
     @GetMapping("home")
     public String lendingPage(){
 
-        return "index";
+        return "index2";
     }
 }

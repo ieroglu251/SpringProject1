@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<!--Text-->
+<h1 th:text="${name}"></h1>
+<h1 th:text="${id}"></h1>
+<h1 th:text="${numbers}"></h1>
+<h1 th:text="${numbers.get(0)}"></h1>
+<h1 th:text="${birthday}"></h1>
+<h1 th:text="${'Hello ' +name}"></h1>
+<h1 th:text="${student}"></h1>
+<h1 th:text="${student.firstName}"></h1>
+
+<!--By Link -->
+
+<a th:href="@{https://google.com}">Cyboo</a>
+
+<!-- controller Mapping -->
+<a th:href="@{/student/register}">Register</a>
+
+<!-- Adding paramteres to link -->
+
+<a th:href="@{/student/welcome(id=1)}">Link2</a>
+<a th:href="@{/student/welcome(id=${student.id})}">Link3</a>
+
+<!-- Iteration -->
+
+<ul>
+
+    <li th:each="number : ${numbers}" th:text="${number}"></li>
+
+</ul>
+
+
+<!-- fragment -->
+<div th:replace="fragments/footer :: footer"></div>
+</body>
+</html>
