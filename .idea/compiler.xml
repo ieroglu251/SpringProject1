@@ -9,9 +9,11 @@
         <outputRelativeToContentRoot value="true" />
         <module name="Spring-05-JavaAnnotations-Autowired" />
         <module name="Spring-05-JavaAnnotation-Value" />
+        <module name="Spring-08-SpringBoot-MVC-Form" />
         <module name="Spring-07-SpringBoot-Demo" />
         <module name="Spring-02-DI-SetterInjection" />
         <module name="Spring-06-JavaCode-Configuration" />
+        <module name="backtobasics" />
         <module name="Spring-01-SpringContainer" />
         <module name="Spring-08-SpringBoot-MVC-Model-View(Thymeleag)" />
         <module name="Spring-03-BeanScope-Singleton-Protype" />
@@ -26,6 +28,7 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="b2b" target="11" />
+      <module name="backtobasics" target="11" />
       <module name="GenaralNotes" target="1.5" />
       <module name="Spring-01-SpringContainer" target="1.8" />
       <module name="Spring-02-DI-ConstructorInjection" target="1.8" />
@@ -40,6 +43,7 @@
       <module name="Spring-06-JavaCode-Configuration" target="1.8" />
       <module name="Spring-07-SpringBoot-Demo" target="11" />
       <module name="Spring-08-SpringBoot-MVC-Controller" target="11" />
+      <module name="Spring-08-SpringBoot-MVC-Form" target="11" />
       <module name="Spring-08-SpringBoot-MVC-Model-View(Thymeleag)" target="11" />
     </bytecodeTargetLevel>
   </component>
@@ -47,8 +51,10 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="Spring-07-SpringBoot-Demo" options="-parameters" />
       <module name="Spring-08-SpringBoot-MVC-Controller" options="-parameters" />
+      <module name="Spring-08-SpringBoot-MVC-Form" options="-parameters" />
       <module name="Spring-08-SpringBoot-MVC-Model-View(Thymeleag)" options="-parameters" />
       <module name="b2b" options="-parameters" />
+      <module name="backtobasics" options="-parameters" />
     </option>
   </component>
 </project>
