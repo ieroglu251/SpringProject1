@@ -20,6 +20,7 @@
         <module name="Spring-05-JavaAnnotations-Component" />
         <module name="b2b" />
         <module name="Spring-08-SpringBoot-MVC-Controller" />
+        <module name="ticketing" />
         <module name="Spring-05-JavaAnnotation-Qualifier" />
         <module name="Spring-04-BeanLifecycle-InitAndDestroyMethod" />
         <module name="GenaralNotes" />
@@ -45,6 +46,7 @@
       <module name="Spring-08-SpringBoot-MVC-Controller" target="11" />
       <module name="Spring-08-SpringBoot-MVC-Form" target="11" />
       <module name="Spring-08-SpringBoot-MVC-Model-View(Thymeleag)" target="11" />
+      <module name="ticketing" target="11" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -55,6 +57,7 @@
       <module name="Spring-08-SpringBoot-MVC-Model-View(Thymeleag)" options="-parameters" />
       <module name="b2b" options="-parameters" />
       <module name="backtobasics" options="-parameters" />
+      <module name="ticketing" options="-parameters" />
     </option>
   </component>
 </project>
