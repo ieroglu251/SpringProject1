@@ -1,25 +1,32 @@
 package com.ticketing.bootstrap;
 
 
+import com.ticketing.dto.ProjectDTO;
 import com.ticketing.dto.RoleDTO;
 import com.ticketing.dto.UserDTO;
 import com.ticketing.enums.Gender;
+import com.ticketing.enums.Status;
+import com.ticketing.service.ProjectService;
 import com.ticketing.service.RoleService;
 import com.ticketing.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
+import java.time.LocalDate;
+
 @Component
 public class DataGenerator implements CommandLineRunner {
 
     RoleService roleService;
     UserService userService;
+    ProjectService projectService;
 
     @Autowired
-    public DataGenerator(RoleService roleService, UserService userService) {
+    public DataGenerator(RoleService roleService, UserService userService, ProjectService projectService) {
         this.roleService = roleService;
         this.userService = userService;
+        this.projectService = projectService;
     }
 
     @Override
@@ -51,7 +58,11 @@ public class DataGenerator implements CommandLineRunner {
         userService.save(user5);
 
 
+        ProjectDTO project1 = new ProjectDTO("Spring MVC", "PR001", user1, LocalDate.now(),LocalDate.now().plusDays(25),"Creating cont", Status.OPEN);
+        ProjectDTO project2 = new ProjectDTO("Spring ORM", "PR002", user2, LocalDate.now(),LocalDate.now().plusDays(25),"Creating dont", Status.IN_PROGRESS);
 
+       projectService.save(project1);
+       projectService.save(project2);
 
     }
 }
