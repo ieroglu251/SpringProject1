@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/GenaralNotes/GenaralNotes.iml" filepath="$PROJECT_DIR$/GenaralNotes/GenaralNotes.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SQLBasics/SQLBasics.iml" filepath="$PROJECT_DIR$/SQLBasics/SQLBasics.iml" />
       <module fileurl="file://$PROJECT_DIR$/Spring-00-LooselyCoupled/Spring-00-LooselyCoupled.iml" filepath="$PROJECT_DIR$/Spring-00-LooselyCoupled/Spring-00-LooselyCoupled.iml" />
       <module fileurl="file://$PROJECT_DIR$/Spring-00-TightlyCoupled/Spring-00-TightlyCoupled.iml" filepath="$PROJECT_DIR$/Spring-00-TightlyCoupled/Spring-00-TightlyCoupled.iml" />
       <module fileurl="file://$PROJECT_DIR$/Spring-01-SpringContainer/Spring-01-SpringContainer.iml" filepath="$PROJECT_DIR$/Spring-01-SpringContainer/Spring-01-SpringContainer.iml" />
@@ -21,6 +22,7 @@
       <module fileurl="file://$PROJECT_DIR$/Spring-08-SpringBoot-MVC-Model-View(Thymeleag)/Spring-08-SpringBoot-MVC-Model-View(Thymeleag).iml" filepath="$PROJECT_DIR$/Spring-08-SpringBoot-MVC-Model-View(Thymeleag)/Spring-08-SpringBoot-MVC-Model-View(Thymeleag).iml" />
       <module fileurl="file://$PROJECT_DIR$/b2b/b2b.iml" filepath="$PROJECT_DIR$/b2b/b2b.iml" />
       <module fileurl="file://$PROJECT_DIR$/backtobasics/backtobasics.iml" filepath="$PROJECT_DIR$/backtobasics/backtobasics.iml" />
+      <module fileurl="file://$PROJECT_DIR$/practice/practice.iml" filepath="$PROJECT_DIR$/practice/practice.iml" />
       <module fileurl="file://$PROJECT_DIR$/ticketing/ticketing.iml" filepath="$PROJECT_DIR$/ticketing/ticketing.iml" />
     </modules>
   </component>

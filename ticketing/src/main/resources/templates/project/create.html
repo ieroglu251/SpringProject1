@@ -32,7 +32,7 @@
                                 <div class="panel-body">
 
                                     <!-- ------------------------FORM START----------------------------- -->
-                                    <form class="needs-validation" novalidate th:action="@{/ project/create}" method="post" th:object="${project}">
+                                    <form class="needs-validation" novalidate th:action="@{/project/create}" method="post" th:object="${project}">
                                         <div class="row">
                                             <div class="col">
                                                 <div class="form-group">
@@ -137,9 +137,9 @@
                                                 <td th:text="${project.assignedManager.firstName + ' ' + project.assignedManager.lastName}"></td>
                                                 <td th:text="${project.projectStatus}"></td>
                                                 <td>
-                                                    <a class="btn btn-warning rounded-0">Update</a>
+                                                    <a th:href="@{/project/update/{id}(id=${project.getProjectCode()})}" class="btn btn-warning rounded-0">Update</a>
                                                     <a th:href="@{/project/delete/{id}(id=${project.getProjectCode()})}"><button type="button" class="btn btn-danger rounded-0">Delete</button></a>
-                                                    <a class="btn btn-info rounded-0">Complete</a>
+                                                    <a th:href="@{/project/complete/{id}(id=${project.getProjectCode()})}" class="btn btn-info rounded-0">Complete</a>
                                                 </td>
                                             </tr>
                                             </tbody>

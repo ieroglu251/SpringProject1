@@ -3,11 +3,13 @@ package com.ticketing.bootstrap;
 
 import com.ticketing.dto.ProjectDTO;
 import com.ticketing.dto.RoleDTO;
+import com.ticketing.dto.TaskDTO;
 import com.ticketing.dto.UserDTO;
 import com.ticketing.enums.Gender;
 import com.ticketing.enums.Status;
 import com.ticketing.service.ProjectService;
 import com.ticketing.service.RoleService;
+import com.ticketing.service.TaskService;
 import com.ticketing.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
@@ -21,12 +23,14 @@ public class DataGenerator implements CommandLineRunner {
     RoleService roleService;
     UserService userService;
     ProjectService projectService;
+    TaskService taskService;
 
     @Autowired
-    public DataGenerator(RoleService roleService, UserService userService, ProjectService projectService) {
+    public DataGenerator(RoleService roleService, UserService userService, ProjectService projectService, TaskService taskService) {
         this.roleService = roleService;
         this.userService = userService;
         this.projectService = projectService;
+        this.taskService = taskService;
     }
 
     @Override
@@ -63,6 +67,15 @@ public class DataGenerator implements CommandLineRunner {
 
        projectService.save(project1);
        projectService.save(project2);
+
+        TaskDTO task1 = new TaskDTO(1L,project1,user1,"Controller","Request Mapping",Status.IN_PROGRESS,LocalDate.now().minusDays(4));
+        TaskDTO task2 = new TaskDTO(2L,project2,user3,"Configuration","Database Connnection",Status.COMPLETE,LocalDate.now().minusDays(12));
+        TaskDTO task3 = new TaskDTO(3L,project1,user5,"Mapping","One-To-Many",Status.IN_PROGRESS,LocalDate.now().minusDays(8));
+        TaskDTO task4 = new TaskDTO(4L,project2,user4,"Dependency Injection","Autowired",Status.UAT_TEST,LocalDate.now().minusDays(20));
+        taskService.save(task1);
+        taskService.save(task2);
+        taskService.save(task3);
+        taskService.save(task4);
 
     }
 }

@@ -11,7 +11,11 @@ public class LevelOne {
     public String OnedecimalSum() {
          number1 = (int) (Math.random() * 9 + 1);
          number2 = (int) (Math.random() * 9 + 1);
+
+         if (number1==1 || number2 ==1){
         return number1 +" + "+ number2 + " = ?";
+    }
+         return "try again";
     }
 
     public List<String> getAnswer(){

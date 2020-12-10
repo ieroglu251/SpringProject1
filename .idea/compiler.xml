@@ -10,7 +10,9 @@
         <module name="Spring-05-JavaAnnotations-Autowired" />
         <module name="Spring-05-JavaAnnotation-Value" />
         <module name="Spring-08-SpringBoot-MVC-Form" />
+        <module name="practice" />
         <module name="Spring-07-SpringBoot-Demo" />
+        <module name="SQLBasics" />
         <module name="Spring-02-DI-SetterInjection" />
         <module name="Spring-06-JavaCode-Configuration" />
         <module name="backtobasics" />
@@ -31,6 +33,7 @@
       <module name="b2b" target="11" />
       <module name="backtobasics" target="11" />
       <module name="GenaralNotes" target="1.5" />
+      <module name="practice" target="11" />
       <module name="Spring-01-SpringContainer" target="1.8" />
       <module name="Spring-02-DI-ConstructorInjection" target="1.8" />
       <module name="Spring-02-DI-SetterInjection" target="1.8" />
@@ -46,6 +49,7 @@
       <module name="Spring-08-SpringBoot-MVC-Controller" target="11" />
       <module name="Spring-08-SpringBoot-MVC-Form" target="11" />
       <module name="Spring-08-SpringBoot-MVC-Model-View(Thymeleag)" target="11" />
+      <module name="SQLBasics" target="1.5" />
       <module name="ticketing" target="11" />
     </bytecodeTargetLevel>
   </component>
@@ -57,6 +61,7 @@
       <module name="Spring-08-SpringBoot-MVC-Model-View(Thymeleag)" options="-parameters" />
       <module name="b2b" options="-parameters" />
       <module name="backtobasics" options="-parameters" />
+      <module name="practice" options="-parameters" />
       <module name="ticketing" options="-parameters" />
     </option>
   </component>
