@@ -12,6 +12,7 @@
         <module name="Spring-08-SpringBoot-MVC-Form" />
         <module name="practice" />
         <module name="Spring-07-SpringBoot-Demo" />
+        <module name="Spring-09-ORM-TableCreation" />
         <module name="SQLBasics" />
         <module name="Spring-02-DI-SetterInjection" />
         <module name="Spring-06-JavaCode-Configuration" />
@@ -23,6 +24,7 @@
         <module name="b2b" />
         <module name="Spring-08-SpringBoot-MVC-Controller" />
         <module name="ticketing" />
+        <module name="Spring-09-ORM-Mapping-OneToOne" />
         <module name="Spring-05-JavaAnnotation-Qualifier" />
         <module name="Spring-04-BeanLifecycle-InitAndDestroyMethod" />
         <module name="GenaralNotes" />
@@ -49,6 +51,9 @@
       <module name="Spring-08-SpringBoot-MVC-Controller" target="11" />
       <module name="Spring-08-SpringBoot-MVC-Form" target="11" />
       <module name="Spring-08-SpringBoot-MVC-Model-View(Thymeleag)" target="11" />
+      <module name="Spring-09-ORM-Mapping-OneToOne" target="11" />
+      <module name="Spring-09-ORM-TableCreation" target="11" />
+      <module name="Spring-090ORM-TableCreation" target="11" />
       <module name="SQLBasics" target="1.5" />
       <module name="ticketing" target="11" />
     </bytecodeTargetLevel>
@@ -59,6 +64,9 @@
       <module name="Spring-08-SpringBoot-MVC-Controller" options="-parameters" />
       <module name="Spring-08-SpringBoot-MVC-Form" options="-parameters" />
       <module name="Spring-08-SpringBoot-MVC-Model-View(Thymeleag)" options="-parameters" />
+      <module name="Spring-09-ORM-Mapping-OneToOne" options="-parameters" />
+      <module name="Spring-09-ORM-TableCreation" options="-parameters" />
+      <module name="Spring-090ORM-TableCreation" options="-parameters" />
       <module name="b2b" options="-parameters" />
       <module name="backtobasics" options="-parameters" />
       <module name="practice" options="-parameters" />
