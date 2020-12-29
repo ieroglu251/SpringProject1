@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/CinemaApp/CinemaApp.iml" filepath="$PROJECT_DIR$/CinemaApp/CinemaApp.iml" />
       <module fileurl="file://$PROJECT_DIR$/GenaralNotes/GenaralNotes.iml" filepath="$PROJECT_DIR$/GenaralNotes/GenaralNotes.iml" />
       <module fileurl="file://$PROJECT_DIR$/SQLBasics/SQLBasics.iml" filepath="$PROJECT_DIR$/SQLBasics/SQLBasics.iml" />
       <module fileurl="file://$PROJECT_DIR$/Spring-00-LooselyCoupled/Spring-00-LooselyCoupled.iml" filepath="$PROJECT_DIR$/Spring-00-LooselyCoupled/Spring-00-LooselyCoupled.iml" />
@@ -20,6 +21,7 @@
       <module fileurl="file://$PROJECT_DIR$/Spring-08-SpringBoot-MVC-Controller/Spring-08-SpringBoot-MVC-Controller.iml" filepath="$PROJECT_DIR$/Spring-08-SpringBoot-MVC-Controller/Spring-08-SpringBoot-MVC-Controller.iml" />
       <module fileurl="file://$PROJECT_DIR$/Spring-08-SpringBoot-MVC-Form/Spring-08-SpringBoot-MVC-Form.iml" filepath="$PROJECT_DIR$/Spring-08-SpringBoot-MVC-Form/Spring-08-SpringBoot-MVC-Form.iml" />
       <module fileurl="file://$PROJECT_DIR$/Spring-08-SpringBoot-MVC-Model-View(Thymeleag)/Spring-08-SpringBoot-MVC-Model-View(Thymeleag).iml" filepath="$PROJECT_DIR$/Spring-08-SpringBoot-MVC-Model-View(Thymeleag)/Spring-08-SpringBoot-MVC-Model-View(Thymeleag).iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring-09-ORM-DrievedQueries/Spring-09-ORM-DrievedQueries.iml" filepath="$PROJECT_DIR$/Spring-09-ORM-DrievedQueries/Spring-09-ORM-DrievedQueries.iml" />
       <module fileurl="file://$PROJECT_DIR$/Spring-09-ORM-Mapping-ManyToMany/Spring-09-ORM-Mapping-ManyToMany.iml" filepath="$PROJECT_DIR$/Spring-09-ORM-Mapping-ManyToMany/Spring-09-ORM-Mapping-ManyToMany.iml" />
       <module fileurl="file://$PROJECT_DIR$/Spring-09-ORM-Mapping-OneToMany/Spring-09-ORM-Mapping-OneToMany.iml" filepath="$PROJECT_DIR$/Spring-09-ORM-Mapping-OneToMany/Spring-09-ORM-Mapping-OneToMany.iml" />
       <module fileurl="file://$PROJECT_DIR$/Spring-09-ORM-Mapping-OneToOne/Spring-09-ORM-Mapping-OneToOne.iml" filepath="$PROJECT_DIR$/Spring-09-ORM-Mapping-OneToOne/Spring-09-ORM-Mapping-OneToOne.iml" />
