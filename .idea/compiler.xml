@@ -36,6 +36,7 @@
         <module name="Spring-05-JavaAnnotations-Component" />
         <module name="Spring-09-ORM-Mapping-OneToOne" />
         <module name="Spring-04-BeanLifecycle-InitAndDestroyMethod" />
+        <module name="Spring-10-Security-CustomConfiguration" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -66,6 +67,7 @@
       <module name="Spring-09-ORM-Mapping-OneToOne" target="11" />
       <module name="Spring-09-ORM-TableCreation" target="11" />
       <module name="Spring-090ORM-TableCreation" target="11" />
+      <module name="Spring-10-Security-CustomConfiguration" target="11" />
       <module name="Spring-10-Security-DefaultConfiguration" target="11" />
       <module name="Sprint-09-ORM-Mapping-ManyToOne" target="11" />
       <module name="SQLBasics" target="1.5" />
@@ -86,6 +88,7 @@
       <module name="Spring-09-ORM-Mapping-OneToOne" options="-parameters" />
       <module name="Spring-09-ORM-TableCreation" options="-parameters" />
       <module name="Spring-090ORM-TableCreation" options="-parameters" />
+      <module name="Spring-10-Security-CustomConfiguration" options="-parameters" />
       <module name="Spring-10-Security-DefaultConfiguration" options="-parameters" />
       <module name="Sprint-09-ORM-Mapping-ManyToOne" options="-parameters" />
       <module name="b2b" options="-parameters" />
