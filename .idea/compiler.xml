@@ -11,6 +11,7 @@
         <module name="Spring-08-SpringBoot-MVC-Form" />
         <module name="practice" />
         <module name="Spring-07-SpringBoot-Demo" />
+        <module name="Spring-09-ORM-Mapping-JPQL-NamedQueries" />
         <module name="Spring-09-ORM-TableCreation" />
         <module name="Spring-06-JavaCode-Configuration" />
         <module name="Spring-09-ORM-DrievedQueries" />
@@ -25,6 +26,7 @@
         <module name="GenaralNotes" />
         <module name="Spring-02-DI-ConstructorInjection" />
         <module name="Spring-05-JavaAnnotation-Value" />
+        <module name="Spring-10-Security-DefaultConfiguration" />
         <module name="Spring-09-ORM-Mapping-ManyToMany" />
         <module name="SQLBasics" />
         <module name="Spring-02-DI-SetterInjection" />
@@ -58,11 +60,13 @@
       <module name="Spring-08-SpringBoot-MVC-Form" target="11" />
       <module name="Spring-08-SpringBoot-MVC-Model-View(Thymeleag)" target="11" />
       <module name="Spring-09-ORM-DrievedQueries" target="11" />
+      <module name="Spring-09-ORM-Mapping-JPQL-NamedQueries" target="11" />
       <module name="Spring-09-ORM-Mapping-ManyToMany" target="11" />
       <module name="Spring-09-ORM-Mapping-OneToMany" target="11" />
       <module name="Spring-09-ORM-Mapping-OneToOne" target="11" />
       <module name="Spring-09-ORM-TableCreation" target="11" />
       <module name="Spring-090ORM-TableCreation" target="11" />
+      <module name="Spring-10-Security-DefaultConfiguration" target="11" />
       <module name="Sprint-09-ORM-Mapping-ManyToOne" target="11" />
       <module name="SQLBasics" target="1.5" />
       <module name="ticketing" target="11" />
@@ -76,11 +80,13 @@
       <module name="Spring-08-SpringBoot-MVC-Form" options="-parameters" />
       <module name="Spring-08-SpringBoot-MVC-Model-View(Thymeleag)" options="-parameters" />
       <module name="Spring-09-ORM-DrievedQueries" options="-parameters" />
+      <module name="Spring-09-ORM-Mapping-JPQL-NamedQueries" options="-parameters" />
       <module name="Spring-09-ORM-Mapping-ManyToMany" options="-parameters" />
       <module name="Spring-09-ORM-Mapping-OneToMany" options="-parameters" />
       <module name="Spring-09-ORM-Mapping-OneToOne" options="-parameters" />
       <module name="Spring-09-ORM-TableCreation" options="-parameters" />
       <module name="Spring-090ORM-TableCreation" options="-parameters" />
+      <module name="Spring-10-Security-DefaultConfiguration" options="-parameters" />
       <module name="Sprint-09-ORM-Mapping-ManyToOne" options="-parameters" />
       <module name="b2b" options="-parameters" />
       <module name="backtobasics" options="-parameters" />

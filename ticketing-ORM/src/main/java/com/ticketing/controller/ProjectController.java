@@ -16,18 +16,22 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping("/project")
 public class ProjectController {
 
-    @Autowired
-    ProjectService projectService;
-    @Autowired
+
+    private ProjectService projectService;
     UserService userService;
+
+    public ProjectController(ProjectService projectService, UserService userService) {
+        this.projectService = projectService;
+        this.userService = userService;
+    }
 
     @GetMapping("/create")
     public String createProject(Model model){
 
         model.addAttribute("project",new ProjectDTO());
-        model.addAttribute("projects",projectService.findAll());
-        model.addAttribute("managers",userService.findManagers());
-
+        model.addAttribute("projects",projectService.listAllProjects() );
+        model.addAttribute("managers",userService.listAllByRole("manager"));
+//
         return "/project/create";
     }
 
@@ -35,33 +39,31 @@ public class ProjectController {
     public String insertProject(ProjectDTO project){
 
         projectService.save(project);
-        project.setProjectStatus(Status.OPEN);
-
         return "redirect:/project/create";
 
     }
-
-    @GetMapping("/delete/{projectcode}")
-    public String deleteProject(@PathVariable("projectcode") String projectcode){
-
-        projectService.deleteById(projectcode);
-
-        return "redirect:/project/create";
-    }
-
-    @GetMapping("/complete/{projectcode}")
-    public String completeProject(@PathVariable("projectcode") String projectcode){
-        projectService.complete(projectService.findById(projectcode));
-        return "redirect:/project/create";
-    }
-    @GetMapping("/update/{projectcode}")
-    public String editProject(@PathVariable("projectcode") String projectcode,Model model){
-        model.addAttribute("project",projectService.findById(projectcode));
-        model.addAttribute("projects",projectService.findAll());
-        model.addAttribute("managers",userService.findManagers());
-        return "/project/update";
-    }
-
+//
+//    @GetMapping("/delete/{projectcode}")
+//    public String deleteProject(@PathVariable("projectcode") String projectcode){
+//
+//        projectService.deleteById(projectcode);
+//
+//        return "redirect:/project/create";
+//    }
+//
+//    @GetMapping("/complete/{projectcode}")
+//    public String completeProject(@PathVariable("projectcode") String projectcode){
+//        projectService.complete(projectService.findById(projectcode));
+//        return "redirect:/project/create";
+//    }
+//    @GetMapping("/update/{projectcode}")
+//    public String editProject(@PathVariable("projectcode") String projectcode,Model model){
+//        model.addAttribute("project",projectService.findById(projectcode));
+//        model.addAttribute("projects",projectService.findAll());
+//        model.addAttribute("managers",userService.findManagers());
+//        return "/project/update";
+//    }
+//
     @PostMapping("/update/{projectcode}")
     public String updateProject(ProjectDTO project){
 

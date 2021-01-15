@@ -25,8 +25,8 @@ public class UserController {
     public String createUser(Model model){
 
         model.addAttribute("user",new UserDTO());
-        model.addAttribute("roles",roleService.findAll());
-        model.addAttribute("users",userService.findAll());
+        model.addAttribute("roles",roleService.listAllRoles());
+        model.addAttribute("users",userService.listAllUsers());
 
         return "/user/create";
     }
@@ -44,9 +44,9 @@ public class UserController {
     @GetMapping("/update/{username}")
     public String editUser(@PathVariable("username") String username,Model model){
 
-        model.addAttribute("user",userService.findById(username));
-        model.addAttribute("users",userService.findAll());
-        model.addAttribute("roles",roleService.findAll());
+        model.addAttribute("user",userService.findByUserName(username));
+        model.addAttribute("users",userService.listAllUsers());
+        model.addAttribute("roles",roleService.listAllRoles());
 
         return "/user/update";
 
@@ -65,7 +65,7 @@ public class UserController {
     @GetMapping("/delete/{username}")
     public String deleteUser(@PathVariable("username") String username){
 
-        userService.deleteById(username);
+        userService.delete(username);
 
         return "redirect:/user/create";
 
