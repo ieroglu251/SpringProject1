@@ -15,7 +15,12 @@ public class SecurityConfigration extends WebSecurityConfigurerAdapter {
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
-        http.authorizeRequests().anyRequest().authenticated().and().httpBasic();
+        http.authorizeRequests().
+                antMatchers("index.html").permitAll().
+                antMatchers("/profile/**").authenticated().
+                antMatchers("/admin/**").hasRole("ADMIN").
+                antMatchers("/management/**").hasAnyRole("ADMIN","MANAGER").
+                and().httpBasic();
     }
 
     @Override
@@ -23,7 +28,9 @@ public class SecurityConfigration extends WebSecurityConfigurerAdapter {
         auth.inMemoryAuthentication().
                 withUser("admin").password(passwordEncoder().encode("admin123")).roles("ADMIN")
                 .and().
-                withUser("ismail").password(passwordEncoder().encode("ismail123")).roles("USER");
+                withUser("ismail").password(passwordEncoder().encode("ismail123")).roles("USER")
+                .and().
+                withUser("manager").password(passwordEncoder().encode("manager123")).roles("MANAGER");
     }
 
     @Bean
