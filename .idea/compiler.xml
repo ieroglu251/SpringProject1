@@ -32,6 +32,7 @@
         <module name="Spring-02-DI-SetterInjection" />
         <module name="CinemaApp" />
         <module name="backtobasics" />
+        <module name="Spring-101-Security-HttpBasic-AutRoleBase" />
         <module name="Spring-03-BeanScope-Singleton-Protype" />
         <module name="Spring-05-JavaAnnotations-Component" />
         <module name="Spring-09-ORM-Mapping-OneToOne" />
@@ -69,6 +70,7 @@
       <module name="Spring-090ORM-TableCreation" target="11" />
       <module name="Spring-10-Security-CustomConfiguration" target="11" />
       <module name="Spring-10-Security-DefaultConfiguration" target="11" />
+      <module name="Spring-101-Security-HttpBasic-AutRoleBase" target="11" />
       <module name="Sprint-09-ORM-Mapping-ManyToOne" target="11" />
       <module name="SQLBasics" target="1.5" />
       <module name="ticketing" target="11" />
@@ -90,6 +92,7 @@
       <module name="Spring-090ORM-TableCreation" options="-parameters" />
       <module name="Spring-10-Security-CustomConfiguration" options="-parameters" />
       <module name="Spring-10-Security-DefaultConfiguration" options="-parameters" />
+      <module name="Spring-101-Security-HttpBasic-AutRoleBase" options="-parameters" />
       <module name="Sprint-09-ORM-Mapping-ManyToOne" options="-parameters" />
       <module name="b2b" options="-parameters" />
       <module name="backtobasics" options="-parameters" />
