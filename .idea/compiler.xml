@@ -13,6 +13,7 @@
         <module name="Spring-07-SpringBoot-Demo" />
         <module name="Spring-09-ORM-Mapping-JPQL-NamedQueries" />
         <module name="Spring-09-ORM-TableCreation" />
+        <module name="Spring-09-ORM-Mapping-ManyToOne" />
         <module name="Spring-06-JavaCode-Configuration" />
         <module name="Spring-09-ORM-DrievedQueries" />
         <module name="Spring-01-SpringContainer" />
@@ -20,11 +21,11 @@
         <module name="b2b" />
         <module name="Spring-08-SpringBoot-MVC-Controller" />
         <module name="ticketing" />
-        <module name="Sprint-09-ORM-Mapping-ManyToOne" />
         <module name="Spring-09-ORM-Mapping-OneToMany" />
         <module name="Spring-05-JavaAnnotation-Qualifier" />
         <module name="GenaralNotes" />
         <module name="Spring-02-DI-ConstructorInjection" />
+        <module name="Spring-10-Security-HttpBasic-Database" />
         <module name="Spring-05-JavaAnnotation-Value" />
         <module name="Spring-10-Security-DefaultConfiguration" />
         <module name="Spring-09-ORM-Mapping-ManyToMany" />
@@ -32,7 +33,7 @@
         <module name="Spring-02-DI-SetterInjection" />
         <module name="CinemaApp" />
         <module name="backtobasics" />
-        <module name="Spring-101-Security-HttpBasic-AutRoleBase" />
+        <module name="Spring-10-Security-HttpBasic-AutRoleBase" />
         <module name="Spring-03-BeanScope-Singleton-Protype" />
         <module name="Spring-05-JavaAnnotations-Component" />
         <module name="Spring-09-ORM-Mapping-OneToOne" />
@@ -64,14 +65,17 @@
       <module name="Spring-09-ORM-DrievedQueries" target="11" />
       <module name="Spring-09-ORM-Mapping-JPQL-NamedQueries" target="11" />
       <module name="Spring-09-ORM-Mapping-ManyToMany" target="11" />
+      <module name="Spring-09-ORM-Mapping-ManyToOne" target="11" />
       <module name="Spring-09-ORM-Mapping-OneToMany" target="11" />
       <module name="Spring-09-ORM-Mapping-OneToOne" target="11" />
       <module name="Spring-09-ORM-TableCreation" target="11" />
       <module name="Spring-090ORM-TableCreation" target="11" />
       <module name="Spring-10-Security-CustomConfiguration" target="11" />
       <module name="Spring-10-Security-DefaultConfiguration" target="11" />
+      <module name="Spring-10-Security-HttpBasic-AutRoleBase" target="11" />
+      <module name="Spring-10-Security-HttpBasic-Database" target="11" />
+      <module name="Spring-10-SecurityHttpBasics-Database" target="11" />
       <module name="Spring-101-Security-HttpBasic-AutRoleBase" target="11" />
-      <module name="Sprint-09-ORM-Mapping-ManyToOne" target="11" />
       <module name="SQLBasics" target="1.5" />
       <module name="ticketing" target="11" />
     </bytecodeTargetLevel>
@@ -86,14 +90,17 @@
       <module name="Spring-09-ORM-DrievedQueries" options="-parameters" />
       <module name="Spring-09-ORM-Mapping-JPQL-NamedQueries" options="-parameters" />
       <module name="Spring-09-ORM-Mapping-ManyToMany" options="-parameters" />
+      <module name="Spring-09-ORM-Mapping-ManyToOne" options="-parameters" />
       <module name="Spring-09-ORM-Mapping-OneToMany" options="-parameters" />
       <module name="Spring-09-ORM-Mapping-OneToOne" options="-parameters" />
       <module name="Spring-09-ORM-TableCreation" options="-parameters" />
       <module name="Spring-090ORM-TableCreation" options="-parameters" />
       <module name="Spring-10-Security-CustomConfiguration" options="-parameters" />
       <module name="Spring-10-Security-DefaultConfiguration" options="-parameters" />
+      <module name="Spring-10-Security-HttpBasic-AutRoleBase" options="-parameters" />
+      <module name="Spring-10-Security-HttpBasic-Database" options="-parameters" />
+      <module name="Spring-10-SecurityHttpBasics-Database" options="-parameters" />
       <module name="Spring-101-Security-HttpBasic-AutRoleBase" options="-parameters" />
-      <module name="Sprint-09-ORM-Mapping-ManyToOne" options="-parameters" />
       <module name="b2b" options="-parameters" />
       <module name="backtobasics" options="-parameters" />
       <module name="practice" options="-parameters" />
