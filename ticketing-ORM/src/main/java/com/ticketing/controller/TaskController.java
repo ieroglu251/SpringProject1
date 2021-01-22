@@ -1,6 +1,9 @@
 package com.ticketing.controller;
 
 import com.ticketing.dto.TaskDTO;
+import com.ticketing.service.ProjectService;
+import com.ticketing.service.TaskService;
+import com.ticketing.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -11,22 +14,24 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping("/task")
 public class TaskController {
 
-//    @Autowired
-//    ProjectService projectService;
-//
-//    @Autowired
-//    UserService userService;
-//
-//    @Autowired
-//    TaskService taskService;
-//    @GetMapping("/create")
-//    public String createTask(Model model){
-//
-//        model.addAttribute("task", new TaskDTO());
-//        model.addAttribute("projects", projectService.findAll());
-//        model.addAttribute("employees", userService.findEmployee() );
-//        model.addAttribute("tasks", taskService.findAll());
-//
-//        return "task/create";
-//    }
+    ProjectService projectService;
+    UserService userService;
+    TaskService taskService;
+
+    public TaskController(ProjectService projectService, UserService userService, TaskService taskService) {
+        this.projectService = projectService;
+        this.userService = userService;
+        this.taskService = taskService;
+    }
+
+    @GetMapping("/create")
+    public String createTask(Model model){
+
+        model.addAttribute("task",new TaskDTO());
+        model.addAttribute("projects",projectService.listAllProjects());
+        model.addAttribute("employees",userService.listAllByRole("employee"));
+        model.addAttribute("tasks",taskService.listAllTasks());
+
+        return "task/create";
+    }
 }

@@ -15,7 +15,7 @@ import java.time.LocalDate;
 @NoArgsConstructor
 @Getter
 @Setter
-//@Where(clause = "isDeleted='false'")
+@Where(clause = "is_deleted=false")
 public class Project extends  BaseEntity{
 
     @Column(unique = true)
@@ -23,7 +23,7 @@ public class Project extends  BaseEntity{
 
     private String projectName;
 
-    @ManyToOne(fetch = FetchType.LAZY,cascade = CascadeType.ALL)
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "manager_id")
     private User assignedManager;
 
