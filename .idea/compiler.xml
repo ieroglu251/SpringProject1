@@ -15,6 +15,7 @@
         <module name="Spring-09-ORM-TableCreation" />
         <module name="Spring-09-ORM-Mapping-ManyToOne" />
         <module name="Spring-06-JavaCode-Configuration" />
+        <module name="Spring-11-Rest-HttpVerbs-Legacy" />
         <module name="Spring-09-ORM-DrievedQueries" />
         <module name="Spring-01-SpringContainer" />
         <module name="Spring-08-SpringBoot-MVC-Model-View(Thymeleag)" />
@@ -78,6 +79,7 @@
       <module name="Spring-10-Security-HttpBasic-Database" target="11" />
       <module name="Spring-10-SecurityHttpBasics-Database" target="11" />
       <module name="Spring-101-Security-HttpBasic-AutRoleBase" target="11" />
+      <module name="Spring-11-Rest-HttpVerbs-Legacy" target="11" />
       <module name="SQLBasics" target="1.5" />
       <module name="ticketing" target="11" />
     </bytecodeTargetLevel>
@@ -104,6 +106,7 @@
       <module name="Spring-10-Security-HttpBasic-Database" options="-parameters" />
       <module name="Spring-10-SecurityHttpBasics-Database" options="-parameters" />
       <module name="Spring-101-Security-HttpBasic-AutRoleBase" options="-parameters" />
+      <module name="Spring-11-Rest-HttpVerbs-Legacy" options="-parameters" />
       <module name="b2b" options="-parameters" />
       <module name="backtobasics" options="-parameters" />
       <module name="practice" options="-parameters" />
