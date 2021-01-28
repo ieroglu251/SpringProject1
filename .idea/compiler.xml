@@ -30,6 +30,7 @@
         <module name="Spring-10-Security-HttpBasic-Database" />
         <module name="Spring-05-JavaAnnotation-Value" />
         <module name="Spring-10-Security-DefaultConfiguration" />
+        <module name="Spring-11-Rest-ResponseEntity" />
         <module name="Spring-09-ORM-Mapping-ManyToMany" />
         <module name="Spring-10-Security-FormAuth" />
         <module name="SQLBasics" />
@@ -82,6 +83,7 @@
       <module name="Spring-101-Security-HttpBasic-AutRoleBase" target="11" />
       <module name="Spring-11-Rest-HttpVerbs-Legacy" target="11" />
       <module name="Spring-11-Rest-HttpVerbs-Preferred" target="11" />
+      <module name="Spring-11-Rest-ResponseEntity" target="11" />
       <module name="SQLBasics" target="1.5" />
       <module name="ticketing" target="11" />
     </bytecodeTargetLevel>
@@ -110,6 +112,7 @@
       <module name="Spring-101-Security-HttpBasic-AutRoleBase" options="-parameters" />
       <module name="Spring-11-Rest-HttpVerbs-Legacy" options="-parameters" />
       <module name="Spring-11-Rest-HttpVerbs-Preferred" options="-parameters" />
+      <module name="Spring-11-Rest-ResponseEntity" options="-parameters" />
       <module name="b2b" options="-parameters" />
       <module name="backtobasics" options="-parameters" />
       <module name="practice" options="-parameters" />
