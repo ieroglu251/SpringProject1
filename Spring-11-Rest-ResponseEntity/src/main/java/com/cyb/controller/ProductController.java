@@ -1,6 +1,7 @@
 package com.cyb.controller;
 
 import com.cyb.entity.Product;
+import com.cyb.entity.ResponseWrapper;
 import com.cyb.repository.ProductRepository;
 import com.cyb.service.ProductService;
 import org.springframework.http.HttpHeaders;
@@ -80,6 +81,24 @@ public class ProductController {
         return new ResponseEntity<>(list,map,HttpStatus.OK);
 
 
+
+    }
+
+    @GetMapping("/read")
+    public ResponseEntity<ResponseWrapper> readAllProducts(){
+        return ResponseEntity
+                .ok(new ResponseWrapper("products successfully retrieved",productService.getProducts()));
+    }
+
+    @DeleteMapping("/delete/{id}")
+    public ResponseEntity<ResponseWrapper> deleteProduct2(@PathVariable("id") long id){
+        return ResponseEntity.ok(new ResponseWrapper("product successfully deleted"));
+
+    }
+
+    @DeleteMapping("/delete2/{id}")
+    public ResponseEntity<ResponseWrapper> deleteProduct1(@PathVariable("id") long id){
+        return ResponseEntity.status(HttpStatus.ACCEPTED).body(new ResponseWrapper("deletedd successfully"));
 
     }
 
