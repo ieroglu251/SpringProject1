@@ -1,0 +1,46 @@
+what we can do with spring security;
+
+1 - User name/ password authentication
+2 - sso/okta/ldap
+3 - app level authorization
+4 - intra app authorization like OAuth
+5 - Microservices security ( using token, JWT)
+6 - method level
+
+There are 5 core concept in spring security
+1 - authentication
+    -who is this user?
+2 - authorization
+    - Are they allowed to do this?
+3 - principal
+    - Currently logged in user
+
+  =how does authorization happened?
+4 - Granted auth
+    - given permission/give authority to someone.
+5 - Roles
+    - Group of authorities
+
+
+1 - add spring security dependency that spring-boot-starter-security
+
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-test</artifactId>
+                <scope>test</scope>
+		    </dependency>
+
+		a - spring security default behavior:
+		    - Adds mandatory authentication for urls
+		    - Adds login form
+		    - Handles login error
+		    - Creates a user and sets a default password.(in the you can get the password, username=user)
+		    - in the .properties file, you can set your username and password:
+		        - spring.security.user.name=foo
+		        - spring.security.user.password=fo
+
+    * spring security adding filters before the servlets to validate users
+
+2 - Authentication Manager
+    - authenticate() -> method 
+

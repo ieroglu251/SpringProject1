@@ -41,6 +41,9 @@
         <option value="$PROJECT_DIR$/Spring-11-Rest-HttpVerbs-Legacy/pom.xml" />
         <option value="$PROJECT_DIR$/Spring-11-Rest-HttpVerbs-Preferred/pom.xml" />
         <option value="$PROJECT_DIR$/Spring-11-Rest-ResponseEntity/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring-11-Rset-RestTemplate/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring-11-Rest-OpenApi3.0/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring-11-Rest-Security-JWT/pom.xml" />
       </list>
     </option>
   </component>

@@ -23,6 +23,7 @@
         <module name="b2b" />
         <module name="Spring-08-SpringBoot-MVC-Controller" />
         <module name="ticketing" />
+        <module name="Spring-11-Rest-Security-JWT" />
         <module name="Spring-09-ORM-Mapping-OneToMany" />
         <module name="Spring-05-JavaAnnotation-Qualifier" />
         <module name="GenaralNotes" />
@@ -30,6 +31,7 @@
         <module name="Spring-10-Security-HttpBasic-Database" />
         <module name="Spring-05-JavaAnnotation-Value" />
         <module name="Spring-10-Security-DefaultConfiguration" />
+        <module name="Spring-11-Rset-RestTemplate" />
         <module name="Spring-11-Rest-ResponseEntity" />
         <module name="Spring-09-ORM-Mapping-ManyToMany" />
         <module name="Spring-10-Security-FormAuth" />
@@ -38,6 +40,7 @@
         <module name="CinemaApp" />
         <module name="backtobasics" />
         <module name="Spring-10-Security-HttpBasic-AutRoleBase" />
+        <module name="Spring-11-Rest-OpenApi3.0" />
         <module name="Spring-03-BeanScope-Singleton-Protype" />
         <module name="Spring-05-JavaAnnotations-Component" />
         <module name="Spring-09-ORM-Mapping-OneToOne" />
@@ -83,7 +86,10 @@
       <module name="Spring-101-Security-HttpBasic-AutRoleBase" target="11" />
       <module name="Spring-11-Rest-HttpVerbs-Legacy" target="11" />
       <module name="Spring-11-Rest-HttpVerbs-Preferred" target="11" />
+      <module name="Spring-11-Rest-OpenApi3.0" target="11" />
       <module name="Spring-11-Rest-ResponseEntity" target="11" />
+      <module name="Spring-11-Rest-Security-JWT" target="11" />
+      <module name="Spring-11-Rset-RestTemplate" target="11" />
       <module name="SQLBasics" target="1.5" />
       <module name="ticketing" target="11" />
     </bytecodeTargetLevel>
@@ -112,7 +118,10 @@
       <module name="Spring-101-Security-HttpBasic-AutRoleBase" options="-parameters" />
       <module name="Spring-11-Rest-HttpVerbs-Legacy" options="-parameters" />
       <module name="Spring-11-Rest-HttpVerbs-Preferred" options="-parameters" />
+      <module name="Spring-11-Rest-OpenApi3.0" options="-parameters" />
       <module name="Spring-11-Rest-ResponseEntity" options="-parameters" />
+      <module name="Spring-11-Rest-Security-JWT" options="-parameters" />
+      <module name="Spring-11-Rset-RestTemplate" options="-parameters" />
       <module name="b2b" options="-parameters" />
       <module name="backtobasics" options="-parameters" />
       <module name="practice" options="-parameters" />
