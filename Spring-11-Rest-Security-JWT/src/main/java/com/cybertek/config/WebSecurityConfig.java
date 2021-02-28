@@ -17,6 +17,16 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
         return super.authenticationManagerBean();
     }
 
+    private static final String[] permittedURLs={ "/authenticate",
+            "/create-user",
+            "/api/p1/**",
+            "/v3/api-docs/**",
+            "/swagger-resources/**",
+            "/configuration/security",
+            "/swagger-ui.html",
+            "/swagger-ui/**",
+            "/webjars/**",};
+
     @Override
     protected void configure(HttpSecurity http) throws Exception{
 
@@ -24,7 +34,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 .csrf()
                 .disable()
                 .authorizeRequests()
-                .antMatchers("/authenticate", "/create-user")
+                .antMatchers(permittedURLs)
                 .permitAll()
                 .anyRequest()
                 .authenticated();
