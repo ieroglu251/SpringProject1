@@ -1,10 +1,13 @@
 package com.cybertek.controller;
 
+import com.cybertek.annotation.DefaultExceptionMessage;
 import com.cybertek.entity.AuthenticationRequest;
 import com.cybertek.entity.ResponseWrapper;
 import com.cybertek.entity.User;
 import com.cybertek.service.UserService;
 import com.cybertek.util.JWTUtil;
+import io.swagger.v3.oas.annotations.Operation;
+import org.hibernate.service.spi.ServiceException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -26,6 +29,7 @@ public class AuthenticationController {
     private JWTUtil jwtUtil;
     
     @PostMapping("/authenticate")
+    @DefaultExceptionMessage(defaultMessage = "bad credentials")
     public ResponseEntity<ResponseWrapper> doLogin(@RequestBody AuthenticationRequest authenticationRequest){
 
         String password = authenticationRequest.getPassword();
@@ -40,5 +44,15 @@ public class AuthenticationController {
         String jwtToken = jwtUtil.generateToken(foundUser);
 
         return ResponseEntity.ok(new ResponseWrapper("Login successfull",jwtToken));
+    }
+
+    @PostMapping("/create-user")
+    @Operation(summary = "Create a new user")
+    @DefaultExceptionMessage(defaultMessage = "Failed to crate user, please try again")
+    public ResponseEntity<ResponseWrapper> createAccount(@RequestBody User user) throws ServiceException {
+
+        User createdUser = userService.createUser(user);
+        return ResponseEntity.ok(new ResponseWrapper("User has been created successfully",createdUser));
+
     }
 }
