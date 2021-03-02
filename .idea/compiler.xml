@@ -33,6 +33,7 @@
         <module name="Spring-10-Security-DefaultConfiguration" />
         <module name="Spring-11-Rset-RestTemplate" />
         <module name="Spring-11-Rest-ResponseEntity" />
+        <module name="JD--Ticketing-RestApi" />
         <module name="Spring-09-ORM-Mapping-ManyToMany" />
         <module name="Spring-10-Security-FormAuth" />
         <module name="SQLBasics" />
@@ -53,6 +54,7 @@
       <module name="backtobasics" target="11" />
       <module name="CinemaApp" target="11" />
       <module name="GenaralNotes" target="1.5" />
+      <module name="JD--Ticketing-RestApi" target="11" />
       <module name="practice" target="11" />
       <module name="Spring-01-SpringContainer" target="1.8" />
       <module name="Spring-02-DI-ConstructorInjection" target="1.8" />
@@ -97,6 +99,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="CinemaApp" options="-parameters" />
+      <module name="JD--Ticketing-RestApi" options="-parameters" />
       <module name="Spring-07-SpringBoot-Demo" options="-parameters" />
       <module name="Spring-08-SpringBoot-MVC-Controller" options="-parameters" />
       <module name="Spring-08-SpringBoot-MVC-Form" options="-parameters" />
